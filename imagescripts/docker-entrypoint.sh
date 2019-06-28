@@ -39,7 +39,8 @@ processCrowdProxySettings
 if [ -d /var/atlassian/crowd/certs ]; then
   for c in /var/atlassian/crowd/certs/* ; do
     echo Found certificate $c, importing to JVM keystore
-    keytool -trustcacerts -keystore $KEYSTORE -storepass changeit -noprompt -importcert -file $c || :
+    c_base=${c##*/} && c_base=${c_base%.*} # equivalent to "basename -s $c"
+    keytool -trustcacerts -keystore $KEYSTORE -storepass changeit -noprompt -importcert -alias $c_base -file $c || :
   done
 fi
 
