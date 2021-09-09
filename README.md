@@ -6,7 +6,7 @@
 
 | Version | Tags  | Dockerfile |
 |---------|-------|------------|
-|  4.0.0  | 4.0.0, latest | [Dockerfile](https://github.com/blacklabelops/crowd/blob/master/Dockerfile) |
+|  4.1.10  | 4.1.10, latest | [Dockerfile](https://github.com/blacklabelops/crowd/blob/master/Dockerfile) |
 
 > Older tags remain but are not supported/rebuild.
 
