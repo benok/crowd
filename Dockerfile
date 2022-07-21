@@ -1,6 +1,6 @@
 FROM adoptopenjdk/openjdk8:alpine
 
-ARG CROWD_VERSION=4.4.0
+ARG CROWD_VERSION=4.4.1
 # permissions
 ARG CONTAINER_UID=1000
 ARG CONTAINER_GID=1000
