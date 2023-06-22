@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk8:alpine
+FROM adoptopenjdk/openjdk11:jre-11.0.11_9-alpine
 
 ARG CROWD_VERSION=4.4.2
 # permissions
@@ -12,7 +12,7 @@ ENV CROWD_HOME=/var/atlassian/crowd \
     CROWD_PROXY_NAME= \
     CROWD_PROXY_PORT= \
     CROWD_PROXY_SCHEME= \
-    KEYSTORE=$JAVA_HOME/jre/lib/security/cacerts
+    KEYSTORE=$JAVA_HOME/lib/security/cacerts
 
 ADD splash-context.xml /opt/crowd/webapps/splash.xml
 
