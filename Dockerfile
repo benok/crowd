@@ -1,6 +1,6 @@
 FROM adoptopenjdk/openjdk11:jre-11.0.11_9-alpine
 
-ARG CROWD_VERSION=4.4.5
+ARG CROWD_VERSION=5.0.2
 # permissions
 ARG CONTAINER_UID=1000
 ARG CONTAINER_GID=1000
